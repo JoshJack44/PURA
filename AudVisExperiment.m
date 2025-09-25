@@ -162,9 +162,9 @@ sca;
 
 end 
 
-% =======================================================================
+
 %                            runSingleTrial
-% =======================================================================
+
 function [trialHemifield, trialSoundOrder, resp] = runSingleTrial(fractalCondition, params, display, hemifield, soundOrder)
 
 win         = params.win;
@@ -332,17 +332,12 @@ trialSoundOrder  = soundOrder;
 
 end 
 
-% =======================================================================
-%                          Helper: queryTextureSize
-% =======================================================================
 function [w, h] = queryTextureSize(tex)
 r = Screen('Rect', tex);  % [0 0 w h]
 w = r(3); h = r(4);
 end
 
-% =======================================================================
-%                      Helper: spatializeBurst (light)
-% =======================================================================
+
 function y = spatializeBurst(stereoDry, x_m, depth_m, Fs)
 y = stereoDry;
 maxILDdB = 3;
