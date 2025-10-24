@@ -17,7 +17,7 @@ This repository contains the MATLAB code for the Visual Calibration experiment, 
 
 ## Requirements
 
-- MATLAB (tested on R2022b or later)  
+- MATLAB (tested on R2022b or later)  gi
 - Psychtoolbox installed  
 - UW Toolbox
 - VCC Toolbox
