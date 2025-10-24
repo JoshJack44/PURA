@@ -1,5 +1,6 @@
-function CombinedAudVisDemo()
+function [] = AudVisExperiment()
 
+% Audio settings
 Fs              = 44100;          % audio sampling rate
 freqPureTone    = 400;            % Hz
 toneDur         = 0.30;           % seconds per tone burst
@@ -17,8 +18,11 @@ expansionDuration  = durations.greenCue;
 expansionIntensity = 1.5;                 % 1=no zoom; >1 zoom in
 purpleDegOffset     = 8;          % degrees visual angle from center
 purpleDotRGB        = [128 0 128];
+
 p.Fs  = Fs; p.a = 0.0875; p.k  = 10; p.d0 = 1; p.c  = 345;
 p.doppler = 0; p.itd = 1; p.ild = 1; p.inverseSquareLaw = 0;
+
+% conditions 
 labels.fractal     = {'expand','contract','neutral'};
 labels.hemifields  = {'left','right'};
 labels.soundOrders = {'LR','RL'};     % first burst location -> second
