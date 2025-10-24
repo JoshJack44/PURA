@@ -4,7 +4,8 @@ This repository contains the MATLAB code for the Visual Calibration experiment, 
 
 ## Files
 
-- `AudVisExperiment.m` – main experiment script  
+- `exp_aud_threshold.m` – measure threshold first
+- `exp_vis_aud.m` – main experiment script (need measured threhsold as input)
 - `DrawFixation.m` – helper for drawing fixation dots  
 - `GeneratePinkNoise.m` – generates fractal noise textures  
 - `ShowInstructions.m` – displays instructions to participants  
@@ -18,10 +19,12 @@ This repository contains the MATLAB code for the Visual Calibration experiment, 
 
 - MATLAB (tested on R2022b or later)  
 - Psychtoolbox installed  
+- UW Toolbox
+- VCC Toolbox
+- Aud Stim Generator 
 
 ## How to Run
 
 1. Open MATLAB and set the working directory to this folder.  
 2. Run the main experiment script:  
-```matlab
-AudVisExperiment
+
